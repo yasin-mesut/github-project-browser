@@ -3,3 +3,5 @@ $semiTransparent: hsla(0, 0%, 100%, 0.125);
 $darkGray: hsl(0, 0%, 15%);
 $almostTransparent: hsla(0, 0%, 100%, 0.175);
 $textSecondary: #fff;
+$danger: #b10000;
+$dangerDark: darken($danger, 10%);

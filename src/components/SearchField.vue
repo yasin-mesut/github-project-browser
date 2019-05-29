@@ -14,6 +14,11 @@
            @input="updateQuery"
            @keydown.esc="resetSearch"
     >
+    <button class="search-field__reset-button"
+            @click="resetSearch"
+    >
+      x
+    </button>
     <List class="search-field__results"
           :items="items"
           :name-key="'login'"
@@ -105,6 +110,22 @@
       top: 150%;
       left: 0;
       background-color: $background;
+    }
+
+    &__reset-button {
+      position: absolute;
+      height: 100%;
+      right: 0.9em;
+      padding: 0 0.5em;
+      top: 50%;
+      background-color: $danger;
+      border: none;
+      cursor: pointer;
+      transform: translateY(-50%);
+
+      &:hover {
+        background-color: $dangerDark;
+      }
     }
   }
 </style>
