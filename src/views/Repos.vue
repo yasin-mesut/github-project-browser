@@ -16,6 +16,7 @@
 import List from '@/components/List.vue';
 import computedMixin from '@/mixins/computed';
 import watchMixin from '@/mixins/watch';
+import mountedMixin from '@/mixins/mounted';
 import axios from 'axios';
 
 export default {
@@ -26,6 +27,7 @@ export default {
   mixins: [
     computedMixin,
     watchMixin,
+    mountedMixin,
   ],
   data: () => ({
     items: null,
@@ -40,9 +42,6 @@ export default {
         this.items = res.data;
       });
     },
-  },
-  mounted() {
-    this.fetchData();
   },
 };
 </script>

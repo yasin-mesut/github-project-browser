@@ -31,6 +31,7 @@
   import List from '@/components/List.vue';
   import computedMixin from '@/mixins/computed';
   import watchMixin from '@/mixins/watch';
+  import mountedMixin from '@/mixins/mounted';
   import axios from 'axios';
   import { debounce } from 'lodash';
 
@@ -46,6 +47,7 @@
     mixins: [
       computedMixin,
       watchMixin,
+      mountedMixin,
     ],
     methods: {
       // eslint-disable-next-line
@@ -74,9 +76,6 @@
     },
     created() {
       this.searchQuery = this.$route.query.search;
-    },
-    mounted() {
-      this.fetchData();
     },
   };
 </script>
