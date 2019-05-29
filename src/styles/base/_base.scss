@@ -1,0 +1,17 @@
+@import '@/styles/utils/_vars.scss';
+
+body {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  background-color: $semiTransparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: gray;
+
+  &:hover {
+    color: $darkGray;
+    text-decoration: none;
+  }
+}
