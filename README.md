@@ -1,5 +1,7 @@
 # github-project-browser
 
+Working [demo](https://frosty-blackwell-f6fc97.netlify.com/).
+
 ## Project setup
 ```
 yarn install
